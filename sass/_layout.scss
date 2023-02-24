@@ -1,26 +1,73 @@
 /* Wrapper */
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 /* Header */
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .search-section {
+    display: grid;
+    // grid-template-columns: 48px auto;
+    align-content: center;
+
+    input {
+      height: 30px;
+    }
+  }
+
+  .account-section {
+    display: grid;
+    grid-template-columns: 48px 48px auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .welcome-section {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+    align-items: center;
+
+    img {
+      grid-row: 1 / 3;
+    }
+  }
+
+  .button-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-/* Footer */
+/* Sidebar */
+
+.sidebar {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  grid-row: 1 / -1;
+  width: 260px;
+  gap: 48px;
+
+  ul {
+    display: grid;
+    gap: 20px;
+    list-style-type: none;
+  }
+}
 
 .footer {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-items: center;
+  align-self: end;
   padding: 4px;
   gap: 4px;
   font-size: 0.875rem;
@@ -33,6 +80,57 @@
 /* Main */
 
 .main {
-  flex: 1;
+  display: grid;
+  grid-template-columns: auto min-content;
+  grid-template-rows: auto 1fr;
+
+  .projects-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 318px);
+
+    .project-card {
+      overflow: hidden;
+    }
+  }
+
+  .right-section {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    .announcements {
+      background-color: rgb(30, 30, 30);;
+    }
+
+    .trending {
+      background-color: rgb(30, 30, 30);;
+    }
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 48px auto;
+    
+    img {
+      grid-row: 1 / 3;
+    }
+  }
 }
 
+
+
+
+.main {
+  padding: 48px 48px 0px 48px;
+  background-color: grey;
+
+  .project-card {
+    background-color: rgb(30, 30, 30);;
+    width: 286px;
+    height: 156px;
+    margin: 16px;
+  }
+}
+
+img {
+  max-width: 48px;
+}

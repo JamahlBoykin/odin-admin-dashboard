@@ -221,24 +221,63 @@ body {
 
 /* Wrapper */
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 /* Header */
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.header .search-section {
+  display: grid;
+  align-content: center;
+}
+.header .search-section input {
+  height: 30px;
+}
+.header .account-section {
+  display: grid;
+  grid-template-columns: 48px 48px auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.header .welcome-section {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  align-items: center;
+}
+.header .welcome-section img {
+  grid-row: 1/3;
+}
+.header .button-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Footer */
+/* Sidebar */
+.sidebar {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  grid-row: 1/-1;
+  width: 260px;
+  gap: 48px;
+}
+.sidebar ul {
+  display: grid;
+  gap: 20px;
+  list-style-type: none;
+}
+
 .footer {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-items: center;
+  align-self: end;
   padding: 4px;
   gap: 4px;
   font-size: 0.875rem;
@@ -249,5 +288,46 @@ body {
 
 /* Main */
 .main {
-  flex: 1;
+  display: grid;
+  grid-template-columns: auto min-content;
+  grid-template-rows: auto 1fr;
+}
+.main .projects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 318px);
+}
+.main .projects-section .project-card {
+  overflow: hidden;
+}
+.main .right-section {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.main .right-section .announcements {
+  background-color: rgb(30, 30, 30);
+}
+.main .right-section .trending {
+  background-color: rgb(30, 30, 30);
+}
+.main .profile {
+  display: grid;
+  grid-template-columns: 48px auto;
+}
+.main .profile img {
+  grid-row: 1/3;
+}
+
+.main {
+  padding: 48px 48px 0px 48px;
+  background-color: grey;
+}
+.main .project-card {
+  background-color: rgb(30, 30, 30);
+  width: 286px;
+  height: 156px;
+  margin: 16px;
+}
+
+img {
+  max-width: 48px;
 }
