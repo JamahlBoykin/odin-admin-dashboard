@@ -10,22 +10,28 @@
     
     <link rel="icon" type="image/x-icon" href="./images/dashboard.svg">
     <title>Admin Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="search-section">
+          <img src="./images/search.svg" alt="Search icon">
           <input type="text">
         </div>
         <div class="account-section">
+          <img class="notification-icon" src="./images/bell-ring-outline.svg" alt="Notification icon">
           <img src="./images/profile-picture.svg" alt="Profile picture">
-          <span>Name</span>
+          <span>John Doe</span>
         </div>
         <div class="welcome-section">
           <img src="./images/profile-picture.svg" alt="Profile picture">
           <p>Hi there,</p>
-          <span>Name (@name)</span>
+          <span>John Doe (@john)</span>
         </div>
         <div class="button-section">
           <button>New</button>
@@ -35,19 +41,19 @@
       </header>
 
       <div class="sidebar">
-        <h1>Dashboard</h1>
+        <h1><img src="./images/dashboard.svg" alt="Dashboard icon">Dashboard</h1>
         <ul>
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+          <li><img src="./images/home.svg" alt="Home icon">Home</li>
+          <li><img src="./images/card-account-details-outline.svg" alt="Profile icon">Profile</li>
+          <li><img src="./images/message-reply.svg" alt="Messages icon">Messages</li>
+          <li><img src="./images/clock-time-three.svg" alt="History icon">History</li>
+          <li><img src="./images/note-multiple.svg" alt="Tasks icon">Tasks</li>
+          <li><img src="./images/account-group.svg" alt="Communities icon">Communities</li>
         </ul>
         <ul>
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+          <li><img src="./images/cog.svg" alt="Settings icon">Settings</li>
+          <li><img src="./images/help-box.svg" alt="Support icon">Support</li>
+          <li><img src="./images/shield-check.svg" alt="Privacy icon">Privacy</li>
         </ul>
 
         <footer class="footer">
@@ -64,28 +70,58 @@
         <h1>Your Projects</h1>
         <div class="projects-section">
           <div class="project-card">
-            <h2>Project 1</h2>
+            <h2>Language Translator</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
           <div class="project-card">
-            <h2>Project 2</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <h2>File Organizer</h2>
+            <p>Morbi sed imperdiet enim. Fusce in tortor et neque convallis euismod. Nunc lacinia ante quis congue hendrerit.</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
           <div class="project-card">
-            <h2>Project 3</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <h2>Secret Project</h2>
+            <p>Mauris ut nisi et lorem sollicitudin commodo. Vivamus facilisis velit sed nisl lacinia vulputate. Vivamus luctus lacus sit amet porttitor.</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
           <div class="project-card">
-            <h2>Project 4</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <h2>Microphone Booster</h2>
+            <p>Nulla fringilla ornare augue aliquet lobortis. Donec vel massa pellentesque, suscipit leo in, volutpat urna. In felis arcu, ultricies sed maximus sit amet, finibus at.</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
           <div class="project-card">
-            <h2>Project 5</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <h2>Virus Scanner</h2>
+            <p>Phasellus luctus luctus libero, at tincidunt ex tincidunt ut. Aenean ut lacus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer commodo nunc eu justo blandit, euismod egestas magna.</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
           <div class="project-card">
-            <h2>Project 6</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus deserunt, minima praesentium illo, temporibus repellendus natus, hic tenetur at rerum odit facere doloribus earum perspiciatis sapiente impedit recusandae expedita velit!</p>
+            <h2>test-project-1</h2>
+            <p>Donec justo tortor, viverra id neque sit amet, rhoncus scelerisque elit. Nulla cursus dignissim tempus. Praesent libero velit, convallis ut justo vel, vulputate malesuada erat. Quisque at velit dui. Donec.</p>
+            <div class="card-icons">
+              <img src="./images/star-plus-outline.svg" alt="Favorite icon">
+              <img src="./images/eye-plus-outline.svg" alt="Watch icon">
+              <img src="./images/share-variant-outline.svg" alt="Share icon">
+            </div>
           </div>
         </div>
 
@@ -93,12 +129,18 @@
           <div class="announcements-section">
             <h1>Announcements</h1>
             <div class="announcements">
-              <h2>Announcement 1</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum incidunt, architecto fugiat obcaecati iusto iste, iure eos atque, deserunt laudantium. Similique, sed consectetur. Vel est cum saepe laborum quos.</p>
-              <h2>Announcement 2</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum incidunt, architecto fugiat obcaecati iusto iste, iure eos atque, deserunt laudantium. Similique, sed consectetur. Vel est cum saepe laborum quos.</p>
-              <h2>Announcement 3</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum incidunt, architecto fugiat obcaecati iusto iste, iure eos atque, deserunt laudantium. Similique, sed consectetur. Vel est cum saepe laborum quos.</p>
+              <div class="announcement">
+                <h2>Site Maintenance</h2>
+                <p>Vivamus euismod, nisi ut ultrices scelerisque, dui mauris aliquam lacus, a condimentum leo eros a ex. Vestibulum.</p>
+              </div>
+              <div class="announcement">
+                <h2>Community Share Day</h2>
+                <p>Praesent rhoncus cursus erat eu placerat. Praesent purus velit, pellentesque ut.</p>
+              </div>
+              <div class="announcement">
+                <h2>Updated Privacy Policy</h2>
+                <p>Nullam cursus vehicula mauris, vel euismod quam. Nam et dignissim eros, dignissim scelerisque nisi.</p>
+              </div>
             </div>
           </div>
 
@@ -107,23 +149,23 @@
             <div class="trending">
               <div class="profile">
                 <img src="./images/profile-picture.svg" alt="Profile picture">
-                <span>@Name1</span>
-                <p>Project Name</p>
+                <span>@alice</span>
+                <p>Money Printer</p>
               </div>
               <div class="profile">
                 <img src="./images/profile-picture.svg" alt="Profile picture">
-                <span>@Name2</span>
-                <p>Project Name</p>
+                <span>@john</span>
+                <p>Language Translator</p>
               </div>
               <div class="profile">
                 <img src="./images/profile-picture.svg" alt="Profile picture">
-                <span>@Name3</span>
-                <p>Project Name</p>
+                <span>@kevin</span>
+                <p>Block Game</p>
               </div>
               <div class="profile">
                 <img src="./images/profile-picture.svg" alt="Profile picture">
-                <span>@Name4</span>
-                <p>Project Name</p>
+                <span>@taylor</span>
+                <p>Smart Toilet</p>
               </div>
             </div>
           </div>
